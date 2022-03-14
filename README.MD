@@ -64,19 +64,19 @@ _________
 ### API description
 
 - http://127.0.0.1:5000/songs [GET]
-Fetching all songs
-Accepts 'page' and 'limit' as a query string parameters.
-Returns songs and links
+Fetching all songs  
+Accepts 'page' and 'limit' as a query string parameters.  
+Returns songs and links  
 - http://127.0.0.1:5000/songs/search [GET]
-GET a list of songs matching the search string.
-Accepts 'message' as a required query string parameter.
+GET a list of songs matching the search string.  
+Accepts 'message' as a required query string parameter.  
 Returns the data as array of objects
 - http://127.0.0.1:5000/songs/rating [POST]
-Add a song rating.
-Accepts data with required fields 'rating' and 'song_id'.
-Return song object with added rating.
+Add a song rating.  
+Accepts data with required fields 'rating' and 'song_id'.  
+Return song object with added rating.  
 - http://127.0.0.1:5000/songs/rating/{song_id} [GET]
-Return an average, lowest and highest rating of the given song by id.
+Return an average, lowest and highest rating of the given song by id.  
 - http://127.0.0.1:5000/songs/difficulty/avg [GET]
-The result can be filtered using the 'level' parameter.
-Return an average difficulty of all songs.
+The result can be filtered using the 'level' parameter.  
+Return an average difficulty of all songs.  
